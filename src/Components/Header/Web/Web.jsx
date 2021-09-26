@@ -7,10 +7,10 @@ const Web = () => {
     return (
         <div className='web'>
             <div className='web-option'>
-                <a href='#project'>
-                    <Icon className='option-icon' path={mdiPuzzleEdit} size={1.5} color="black"/>
-                    Proyectos
-                    </a>
+            <a href='#project'>
+                <Icon className='option-icon' path={mdiPuzzleEdit} size={1.5} color="black"/>
+                Proyectos
+            </a>
             </div>
             <div className='web-option'>
             <a href='#tecnologies'>
