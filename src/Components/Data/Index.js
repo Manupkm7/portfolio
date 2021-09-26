@@ -18,5 +18,5 @@ export const SocialDetail =[
         plataform: 'Whatsapp',
         link: 'https://wa.me/5491158576934',
         icon: require('../Utils/Icons/whatsapp.png').default
-    }
+    },
 ]
