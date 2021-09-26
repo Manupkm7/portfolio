@@ -1,4 +1,5 @@
 import React from 'react'
+import ModalWindow from './ModalWindow'
 import './Experience.css'
 
 const ExperienceCard = ({data}) => {
@@ -11,7 +12,10 @@ const ExperienceCard = ({data}) => {
                     <label>{data.dateJoining} -</label><label>{data.dateEnd}</label>
                 </div>
                 <div className="work-desc">
-                    <div><p>{data.work}</p></div>
+                    <div>
+                        <p>{data.work}</p>
+                        <ModalWindow />
+                    </div>
                 </div>
             </div>
         </div>
