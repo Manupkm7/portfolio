@@ -7,7 +7,7 @@ const Web = () => {
     return (
         <div className='web'>
             <div className='web-option'>
-            <a href='#project'>
+            <a href='#projects'>
                 <Icon className='option-icon' path={mdiPuzzleEdit} size={1.5} color="black"/>
                 Proyectos
             </a>
@@ -19,7 +19,7 @@ const Web = () => {
             </a>            
             </div>
             <div className='web-option'>
-            <a href='#experiencie'>
+            <a href='#experience'>
                 <Icon className='option-icon' path={mdiBriefcase} size={1.5} color="black"/>
                 Experiencia laboral
             </a> 

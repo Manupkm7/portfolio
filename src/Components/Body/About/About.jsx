@@ -7,7 +7,7 @@ const About = () => {
         <div className='about'>
             <div className="about-top">
                 <div className="about-info">
-                <p>Hola, bienvenido <br /> <span className='info-name'>Yo soy Manuel Espinoza </span>
+                <p>Hola, bienvenido 😺<br /><span className='info-name'>Yo soy Manuel Espinoza </span>
                 <br /> Y amo experimentar con el desarrollo web</p>
                 </div>
                 <div className="about-img">
