@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Web from './Web/Web'
+import Mobile from './Mobile/Mobile'
+import Icon from '@mdi/react'
+import {mdiMenu} from '@mdi/js' 
+
+import './Header.css'
 
 const Header = () => {
+    const [open, setOpen] = useState(false);
+
     return (
-        <div>
-            <h2>Jelou</h2>
+        <div className='header'>
+            <div className='logo'><h1>Manuel Espinoza</h1></div>
+            <div className='menu'>
+                <div className='web-menu'><Web /></div>
+                <div className='mobile-menu'>
+                    <div onClick={()=>setOpen(!open)}>
+                    <Icon className='menu-icon' path={mdiMenu} size={2.5} color="black"/>
+                    </div>
+                    {open && <Mobile open={open} setOpen={setOpen} />}
+                </div>
+            </div>
         </div>
     )
 }

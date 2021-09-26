@@ -8,13 +8,13 @@ import Body from '../Body/Body'
 const Home = () => {
     return (
         <div className='home'>
-        <div>
+        <div className='home'>
             <Header />
         </div>
-        <div>
+        <div className='home'>
             <Body />
         </div>
-        <div>
+        <div className='home'>
             <Footer />
         </div>
         </div>
