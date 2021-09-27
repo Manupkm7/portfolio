@@ -1,6 +1,6 @@
 # Bienvenidos les dejo un breve mensaje 🤠
 
-Este es mi Portfolio personal con mis conocimientos y informacion de contacto.
+Este es mi Portfolio personal con mis conocimientos e informacion de contacto.
 
 Para poder usarlo entrar aca 👉: https://portfolio-manupkm7.vercel.app
 
