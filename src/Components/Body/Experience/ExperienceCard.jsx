@@ -14,7 +14,7 @@ const ExperienceCard = ({data}) => {
                 <div className="work-desc">
                     <div>
                         <p>{data.work}</p>
-                        <ModalWindow />
+                        <ModalWindow data={data} />
                     </div>
                 </div>
             </div>

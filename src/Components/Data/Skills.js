@@ -26,6 +26,10 @@ export const SkillsData = [
         {
             name: 'Bootstrap',
             icon: <i class="devicon-bootstrap-plain-wordmark colored"></i>
+        },
+        {
+            name: "NextJs",
+            icon: <i class="devicon-nextjs-original-wordmark colored"></i>
         }
     ]   
     },

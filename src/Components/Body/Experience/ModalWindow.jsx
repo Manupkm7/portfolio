@@ -22,11 +22,11 @@ const button ={
   bgcolor: 'aquamarine'
 }
 
-export default function BasicModal() {
+export default function BasicModal({data}) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-
+  console.log(data)
   return (
     <div>
       <Button  sx={button} onClick={handleOpen}>Ver descipcion completa</Button>
@@ -38,19 +38,14 @@ export default function BasicModal() {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            Techo | Teto
+            {data.company}
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-          Participación de un equipo de desarrollo ágil con sprints de una semana presentando a un Product Owner avances 
-          sobre el desarrollo de los componentes de Administradores para seleccionar, y ordenar candidatos. <br />
-          -Optimización de código. <br />
-          -Implementación de nuevas funcionalidades como por ejemplo: <br />
-          -Rechazar/Aceptar candidatos mediante un botón que actualice su estado en una Base de datos <br />
-          -Agilizar la selección y comunicación con candidatos para el voluntariado. <br />
-          -Envío de Mails automáticos y personalizados con una plantilla especifica.<br />
-          -Capacidad de entrevistar a candidatos para una posición.<br />
-          -Creación de nuevos trabajos.<br />
+          {data.data.map((item)=>(
+          <Typography key={item} id="modal-modal-description" sx={{ mt: 2 }}>
+            {item.Resposabilities}
           </Typography>
+          ))}
+
         </Box>
       </Modal>
     </div>
