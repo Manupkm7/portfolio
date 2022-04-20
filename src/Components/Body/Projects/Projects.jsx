@@ -1,5 +1,4 @@
 import React from 'react'
-import './Projects.css'
 import {ProjectsData} from '../../Data/Projects'
 import ProjectCard from './ProjectCard';
 import Separator from '../../Common/Separator/Separator'
