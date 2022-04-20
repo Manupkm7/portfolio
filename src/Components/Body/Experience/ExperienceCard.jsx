@@ -20,18 +20,26 @@ const useStyles = makeStyles((theme)=>({
         width: "80px",
         [theme.breakpoints.down("xs")]: {
             width: "30%",
-            marginRight: "3rem",
         },
     },
     workDesc: {
         width: "80%",
         textAlign: "left",
+        [theme.breakpoints.down("xs")]: {
+            width: "100%",
+            textAlign: "center",
+        },
     },
     workInfo: {
         display: "flex",
         alignItems: "flex-start",
         flexDirection: "column",
         width: "40%",
+        [theme.breakpoints.down("xs")]: {
+            width: "100%",
+            alignItems: "center"
+
+        },
     },
     workComp: {
         fontWeight: 600,

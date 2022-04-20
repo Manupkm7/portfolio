@@ -18,6 +18,9 @@ const useStyles = makeStyles((theme)=>({
         alignItems: "center",
         margin: theme.spacing(3)
     },
+    title: {
+        fontWeight: 600,
+    },
 }))
 
 const Experience = () => {
@@ -26,7 +29,7 @@ const Experience = () => {
     return (
         <Box className={classes.experience}>
             <Separator />
-            <Typography variant="h6">Experiencia Laboral</Typography>
+            <Typography className={classes.title} variant="h6">Experiencia Laboral</Typography>
             <Box className={classes.experience}>
                 {data.map((data)=>{
                     return <ExperienceCard data={data} />
