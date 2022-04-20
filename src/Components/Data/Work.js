@@ -4,6 +4,7 @@ export const WorkData = [
         designation: 'FullStack Developer',
         dateJoining: '29/08/2021',
         dateEnd: '24/09/2021 - Pasantia Estudiantil',
+        url: "https://techo.org/",
         logo: 'https://namati.org/wp-content/uploads/2019/09/Logo_TECHO-768x768.png',
         work: 'Participación de un equipo de desarrollo ágil con sprints de una semana presentando a un Product Owner avances sobre el desarrollo de los componentes',
         data: [
@@ -35,6 +36,7 @@ export const WorkData = [
         designation: 'Front End Developer',
         dateJoining: '28/09/2021',
         dateEnd: 'Actualmente',
+        url: "https://ratherlabs.com/",
         logo: 'https://cdm-backend-assets.s3.amazonaws.com/users/usr_bCMiZnNEmc0zS/avatars/ast_tFiClNODbQCpM.png',
         work: 'Participación de un equipo de desarrollo ágil con sprints de una semana presentando a los clientes avances sobre el desarrollo de los distintos proyectos',
         data: [
@@ -49,7 +51,14 @@ export const WorkData = [
         },
         {
             Resposabilities: "Conexion con Backend y Blockchain",
-        }
+        },
+        {
+            Resposabilities: "Implementacion de SEO en los distintos proyectos",
+        },
+        {
+            Resposabilities: "Mejorar la experiencia UI & UX",
+        },
+
     ]
     }
 ]

@@ -1,24 +1,77 @@
 import React from 'react'
 import ModalWindow from './ModalWindow'
-import './Experience.css'
+import { makeStyles } from "@material-ui/core/styles";
+import { Box, Typography } from '@material-ui/core'
+
+const useStyles = makeStyles((theme)=>({
+    workCard: {
+        padding: theme.spacing(1),
+        marginTop: theme.spacing(1.2),
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        flexDirection: "row-reverse",
+        [theme.breakpoints.down("xs")]: {
+            justifyContent: "space-evenly",
+            flexDirection: "column-reverse"
+        },
+    },
+    workLogo: {
+        width: "80px",
+        [theme.breakpoints.down("xs")]: {
+            width: "30%",
+            marginRight: "3rem",
+        },
+    },
+    workDesc: {
+        width: "80%",
+        textAlign: "left",
+    },
+    workInfo: {
+        display: "flex",
+        alignItems: "flex-start",
+        flexDirection: "column",
+        width: "40%",
+    },
+    workComp: {
+        fontWeight: 600,
+        textDecoration: "underline",
+    },
+    links: {
+        color: "black",
+        textDecoration: "none",
+    },
+    linkImage: {
+        [theme.breakpoints.down("xs")]: {
+            display: "flex",
+            justifyContent: "center",
+            padding: theme.spacing(1),
+        },
+    },
+}))
 
 const ExperienceCard = ({data}) => {
+    const classes = useStyles();
     return (
-        <div className='work-card'>
-            <img src={data.logo} alt='logo techo' className='work-logo'/>
-            <div className="work-info">
-                <label className='company-name'>{data.company}</label>
-                <div className="work-dates">
-                    <label>{data.dateJoining} -</label><label>{data.dateEnd}</label>
-                </div>
-                <div className="work-desc">
-                    <div>
+        <Box className={classes.workCard}>
+                <a href={data.url} className={classes.linkImage} target="_blank" rel='noreferrer'>
+                    <img src={data.logo} alt='logo techo' className={classes.workLogo}/>
+                </a>
+            <Box className={classes.workInfo}>
+                <a href={data.url} className={classes.links} target="_blank" rel='noreferrer'>
+                    <Typography className={classes.workComp} noWrap>{data.company}</Typography>
+                </a>
+                <Box>
+                    <Typography variant="caption">{data.dateJoining} -</Typography><Typography variant="caption">{data.dateEnd}</Typography>                    
+                </Box>
+                <Box className={classes.workDesc}>
+                    <Box>
                         <p>{data.work}</p>
                         <ModalWindow data={data} />
-                    </div>
-                </div>
-            </div>
-        </div>
+                    </Box>
+                </Box>
+            </Box>
+        </Box>
     )
 }
 

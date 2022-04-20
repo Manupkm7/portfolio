@@ -1,47 +1,59 @@
-import React from 'react'
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
-import './Experience.css'
+import React, { useState } from 'react'
+import { Box, Typography, Button, Modal } from '@material-ui/core'
+import { makeStyles } from "@material-ui/core/styles";
 
-const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid aquamarine',
-  boxShadow: 24,
-  p: 4,
-};
-const button ={
-  p: 1.3,
-  color: 'black',
-  bgcolor: 'aquamarine'
-}
+const useStyles = makeStyles((theme)=>({
+    modal: {
+      position: 'absolute',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+      width: 400,
+      backgroundColor: 'white',
+      border: '2px solid aquamarine',
+      boxShadow: 24,
+      padding: theme.spacing(2),
+    },
+    buttonDesc: {
+      padding: theme.spacing(1),
+      color: 'black',
+      backgroundColor: 'aquamarine',
+      "&:hover": {
+        color: 'black',
+        backgroundColor: 'aquamarine'
+      },
+    },
+    company: {
+      fontWeight: 600,
+      margin: theme.spacing(1.5),
+      textDecoration: "underline",
+    },
+    resposabilities: {
+      margin: theme.spacing(1.5),
+    },
+}))
 
-export default function BasicModal({data}) {
-  const [open, setOpen] = React.useState(false);
+const BasicModal = ({data}) => {
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  console.log(data)
+  const classes = useStyles();
+
   return (
     <div>
-      <Button  sx={button} onClick={handleOpen}>Ver descipcion completa</Button>
+      <Button className={classes.buttonDesc} onClick={handleOpen}>Ver descipcion completa</Button>
       <Modal
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
+        <Box className={classes.modal}>
+          <Typography id="modal-modal-title" variant="h6" className={classes.company}>
             {data.company}
           </Typography>
           {data.data.map((item)=>(
-          <Typography key={item} id="modal-modal-description" sx={{ mt: 2 }}>
+          <Typography key={item} id="modal-modal-description" className={classes.resposabilities}>
             {item.Resposabilities}
           </Typography>
           ))}
@@ -51,3 +63,5 @@ export default function BasicModal({data}) {
     </div>
   );
 }
+
+export default BasicModal;
