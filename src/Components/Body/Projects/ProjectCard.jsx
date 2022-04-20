@@ -2,7 +2,7 @@ import React from 'react'
 import Icon from '@mdi/react'
 import {mdiWebCheck} from '@mdi/js'
 import { makeStyles } from "@material-ui/core/styles";
-import { Box, Typography } from '@material-ui/core'
+import { Box } from '@material-ui/core'
 
 const useStyles = makeStyles((theme)=>({
     projectCard: {
@@ -100,7 +100,7 @@ const ProjectCard = ({project}) => {
     return (
         <Box className={classes.projectCard}>
             <Box className={classes.projectInfo}>
-                <Typography className={classes.titles} variant="h5">{project.title}</Typography>
+                <label className={classes.titles} variant="h5">{project.title}</label>
                 <Box className={classes.boxLinks}>
                     {project.demo&&(
                         <a className={classes.links} target="_blank" rel="noreferrer" href={project.demo}>
@@ -117,10 +117,10 @@ const ProjectCard = ({project}) => {
                         </a>
                     )}
                 </Box>
-                <Typography style={{ padding: 8, margin: 8 }} variant="body1">{project.about}</Typography>
+                <label style={{ padding: 8, margin: 8 }} variant="body1">{project.about}</label>
                 <Box className={classes.projectTags}>
                     {project.tags.map((tag)=>{
-                        return <Typography className={classes.tag}>{tag}</Typography>
+                        return <label className={classes.tag}>{tag}</label>
                     })}
                 </Box>
             </Box>
