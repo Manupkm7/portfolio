@@ -33,8 +33,10 @@ const useStyles = makeStyles((theme)=>({
         [theme.breakpoints.down("xs")]: {
             maxWidth: "100",
             justifyContent: "center",
-        },
-        
+        },  
+    },
+    title: {
+        fontWeight: 600,
     },
 }))
 
@@ -45,7 +47,7 @@ const Skills = () => {
     return (
         <Box className={classes.skill}>
             <Separator />
-            <Typography variant="h4">Tecnologias</Typography>
+            <Typography className={classes.title} variant="h4">Tecnologias</Typography>
             <Box>
                 {data.map((item)=>{
                     return (
