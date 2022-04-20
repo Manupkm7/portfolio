@@ -3,18 +3,33 @@ import './Projects.css'
 import {ProjectsData} from '../../Data/Projects'
 import ProjectCard from './ProjectCard';
 import Separator from '../../Common/Separator/Separator'
+import { makeStyles } from "@material-ui/core/styles";
+import { Box, Typography } from '@material-ui/core'
+
+const useStyles = makeStyles((theme)=>({
+    projects: {
+        display: "flex",
+        flexDirection: "column",
+        flex: 1,
+    },
+    title: {
+        fontWeight: 600,
+    },
+}))
+
 const Projects = () => {
+    const classes = useStyles();
     const data = ProjectsData;
     return (
-        <div className='projects'>
+        <Box className={classes.projects}>
             <Separator />
-            <label className='section-title'>Proyectos</label>
-            <div>
+            <Typography className={classes.title} variant="h4">Proyectos</Typography>
+            <Box>
                 {data.map((project)=>{
                     return <ProjectCard project={project}/> 
                 })}
-            </div>
-        </div>
+            </Box>
+        </Box>
     )
 }
 

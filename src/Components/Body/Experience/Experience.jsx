@@ -29,7 +29,7 @@ const Experience = () => {
     return (
         <Box className={classes.experience}>
             <Separator />
-            <Typography className={classes.title} variant="h6">Experiencia Laboral</Typography>
+            <Typography className={classes.title} variant="h4">Experiencia Laboral</Typography>
             <Box className={classes.experience}>
                 {data.map((data)=>{
                     return <ExperienceCard data={data} />
