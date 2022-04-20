@@ -1,21 +1,38 @@
 import React from 'react'
 import Separator from '../../Common/Separator/Separator'
-import {WorkData} from '../../Data/Work'
+import { WorkData } from '../../Data/Work'
 import ExperienceCard from './ExperienceCard'
-import './Experience.css'
+import { makeStyles } from "@material-ui/core/styles";
+import { Box, Typography } from '@material-ui/core'
+
+const useStyles = makeStyles((theme)=>({
+    experience: {
+        display: "flex",
+        flexDirection: "column",
+        width: "100%",
+    },
+    experienceList: {
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "space-between",
+        alignItems: "center",
+        margin: theme.spacing(3)
+    },
+}))
 
 const Experience = () => {
     const data = WorkData
+    const classes = useStyles();
     return (
-        <div className='experience'>
+        <Box className={classes.experience}>
             <Separator />
-            <label className="section-title">Experiencia Laboral</label>
-            <div className="experiencie-list">
+            <Typography variant="h6">Experiencia Laboral</Typography>
+            <Box className={classes.experience}>
                 {data.map((data)=>{
                     return <ExperienceCard data={data} />
                 })}
-            </div>
-        </div>
+            </Box>
+        </Box>
     )
 }
 
