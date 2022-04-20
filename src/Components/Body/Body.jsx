@@ -4,10 +4,20 @@ import Projects from './Projects/Projects'
 import Skills from './Skills/Skills'
 import Experience from './Experience/Experience'
 import Contact from './Contact/Contact'
+import { makeStyles } from "@material-ui/core/styles";
+import { Box } from '@material-ui/core'
+
+const useStyles = makeStyles((theme)=>({
+    about: {
+      padding: theme.spacing(2),
+      paddingBottom: theme.spacing(4),
+    },
+}))
 
 const Body = () => {
+    const classes = useStyles();
     return (
-        <div className='body'>
+        <Box className={classes.body}>
           <section id='about'>
             <About />
           </section>
@@ -23,7 +33,7 @@ const Body = () => {
           <section id='contact'>
             <Contact />
           </section>
-        </div>
+        </Box>
     )
 }
 

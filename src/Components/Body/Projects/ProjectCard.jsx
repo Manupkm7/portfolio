@@ -21,11 +21,13 @@ const useStyles = makeStyles((theme)=>({
         flexDirection: "row",
         justifyContent: "flex-start",
         flexWrap: "nowrap",
-        alignContent: "flexStart",
+        alignContent: "flex-start",
         alignItems: "flex-start",
         padding: theme.spacing(1),
         margin: theme.spacing(1),
-
+        [theme.breakpoints.down("xs")]: {
+            justifyContent: "center",
+        },
     },
     links: {
         textDecoration: "none",
@@ -49,6 +51,11 @@ const useStyles = makeStyles((theme)=>({
         maxWidth: "60%",
         flexWrap: "wrap",
         margin: theme.spacing(1),
+        [theme.breakpoints.down("xs")]: {
+            maxWidth: "100%",
+            justifyContent: "center",
+
+        },
     },
     projectPhoto: {
         width: "70%",
@@ -76,6 +83,16 @@ const useStyles = makeStyles((theme)=>({
             width: "70%",
         },
     },
+    titles: {
+        margin: theme.spacing(1),
+        padding: theme.spacing(1),
+        display: "flex",
+        [theme.breakpoints.down("xs")]: {
+            justifyContent: "center",
+            margin: 0,
+            marginTop: theme.spacing(4)
+        },
+    },
 }))
 
 const ProjectCard = ({project}) => {
@@ -83,7 +100,7 @@ const ProjectCard = ({project}) => {
     return (
         <Box className={classes.projectCard}>
             <Box className={classes.projectInfo}>
-                <Typography style={{ padding: 8, margin: 8 }} variant="h5">{project.title}</Typography>
+                <Typography className={classes.titles} variant="h5">{project.title}</Typography>
                 <Box className={classes.boxLinks}>
                     {project.demo&&(
                         <a className={classes.links} target="_blank" rel="noreferrer" href={project.demo}>

@@ -1,6 +1,5 @@
 import React from 'react'
 import SocialContact from '../../Common/SocialContact/SocialContact'
-
 import { makeStyles } from "@material-ui/core/styles";
 import { Box } from '@material-ui/core'
 
