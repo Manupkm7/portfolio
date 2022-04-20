@@ -57,10 +57,10 @@ const Contact = () => {
     return (
         <Box className={classes.contact}>
             <Separator />
-            <Typography variant="h5" className={classes.sectionTitle}>Contactame</Typography>
+            <Typography variant="h4" className={classes.sectionTitle}>Contactame</Typography>
             <Box className={classes.contactContainer}>
                 <Box className={classes.contactLeft}>
-                    <Typography>Podrás encontrarme en cualquiera de estas plataformas 👇</Typography>
+                    <label>Podrás encontrarme en cualquiera de estas plataformas 👇</label>
                     <SocialContact />
                 </Box>
                 <Box className={classes.download}>
