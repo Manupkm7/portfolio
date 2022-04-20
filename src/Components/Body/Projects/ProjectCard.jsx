@@ -92,6 +92,7 @@ const useStyles = makeStyles((theme)=>({
             margin: 0,
             marginTop: theme.spacing(4)
         },
+        fontSize: 32,
     },
 }))
 
@@ -117,7 +118,7 @@ const ProjectCard = ({project}) => {
                         </a>
                     )}
                 </Box>
-                <label style={{ padding: 8, margin: 8 }} variant="body1">{project.about}</label>
+                <label style={{ padding: 8, margin: 8, fontSize: 20 }} variant="body1">{project.about}</label>
                 <Box className={classes.projectTags}>
                     {project.tags.map((tag)=>{
                         return <label className={classes.tag}>{tag}</label>
