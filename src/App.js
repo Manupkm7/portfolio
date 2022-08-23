@@ -1,11 +1,12 @@
+import { Container } from '@material-ui/core'
 import React from 'react'
 import Home from './Components/Home/Home'
 
 const App = () => {
   return (
-    <div className='App'>
+    <Container maxWidth="lg">
       <Home />
-    </div>
+    </Container>
   )
 }
 

@@ -1,11 +1,12 @@
 import React from 'react'
 import About from './About/About'
-import Projects from './Projects/Projects'
+import Projects from './ProjectsPersonal/Projects'
 import Skills from './Skills/Skills'
 import Experience from './Experience/Experience'
 import Contact from './Contact/Contact'
 import { makeStyles } from "@material-ui/core/styles";
 import { Box } from '@material-ui/core'
+import ProjectsWorks from './ProjectsWork/Projects'
 
 const useStyles = makeStyles((theme)=>({
     about: {
@@ -22,6 +23,9 @@ const Body = () => {
             <About />
           </section>
           <section id='projects'>
+            <ProjectsWorks />
+          </section>
+          <section id='projectsPersonal'>
             <Projects />
           </section>
           <section id='tecnologies'>

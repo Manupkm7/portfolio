@@ -1,11 +1,11 @@
 import React from 'react'
-import {ProjectsData} from '../../Data/Projects'
+import { ProjectsDataPersonal } from '../../Data/Projects'
 import ProjectCard from './ProjectCard';
 import Separator from '../../Common/Separator/Separator'
 import { makeStyles } from "@material-ui/core/styles";
 import { Box, Typography } from '@material-ui/core'
 
-const useStyles = makeStyles((theme)=>({
+const useStyles = makeStyles(()=>({
     projects: {
         display: "flex",
         flexDirection: "column",
@@ -18,13 +18,13 @@ const useStyles = makeStyles((theme)=>({
 
 const Projects = () => {
     const classes = useStyles();
-    const data = ProjectsData;
+
     return (
         <Box className={classes.projects}>
             <Separator />
-            <Typography className={classes.title} variant="h4">Proyectos</Typography>
+            <Typography className={classes.title} variant="h4">Proyectos Personales</Typography>
             <Box>
-                {data.map((project)=>{
+                {(ProjectsDataPersonal || []).map((project)=>{
                     return <ProjectCard project={project}/> 
                 })}
             </Box>

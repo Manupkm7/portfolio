@@ -55,6 +55,10 @@ export const SkillsData = [
     {
         name: 'MongoDB',
         icon: <i class="devicon-mongodb-plain-wordmark colored"></i>
+    },
+    {
+        name: "Solidity",
+        icon: <i class="devicon-solidity-plain colored"></i>
     }
 ]
 }
