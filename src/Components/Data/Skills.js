@@ -49,6 +49,10 @@ export const SkillsData = [
         icon: <i class="devicon-typescript-plain colored"></i>
     },
     {
+        name: 'Python',
+        icon: <i class="devicon-python-plain-wordmark colored"></i>
+    },
+    {
         name: 'PostgreSql',
         icon: <i class="devicon-postgresql-plain-wordmark colored"></i>
     },
