@@ -4,8 +4,8 @@ import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles(() => ({
   workCard: {
-    padding: 1,
-    marginTop: 1.2,
+    padding: 4,
+    marginTop: 4.2,
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
@@ -40,12 +40,17 @@ const useStyles = makeStyles(() => ({
     // },
   },
   workComp: {
-    fontWeight: 600,
+    fontWeight: "600 !important",
     textDecoration: "underline",
   },
   links: {
     color: "black",
     textDecoration: "none",
+    transition: "0.2s ease-in-out",
+    "&:hover": {
+      transform: "scale(1.1)",
+      transition: "0.2s ease-in-out",
+    },
   },
   linkImage: {
     // [theme.breakpoints.down("xs")]: {

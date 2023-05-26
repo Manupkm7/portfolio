@@ -4,14 +4,15 @@ import { makeStyles } from "@mui/styles";
 const useStyles = makeStyles(() => ({
   skillCards: {
     width: "max-content",
-    padding: 2,
+    padding: 4,
     height: "120px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    margin: 1,
-    borderRadius: 1,
+    margin: 4,
+    borderRadius: 4,
+    marginTop: 8,
     // [theme.breakpoints.down("xs")]: {
     //   fontSize: 60,
     // },

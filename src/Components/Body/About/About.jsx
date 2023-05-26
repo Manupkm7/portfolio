@@ -1,6 +1,7 @@
-import SocialContact from "../../Common/SocialContact/SocialContact";
 import { Box } from "@mui/material";
 import { makeStyles } from "@mui/styles";
+import SocialContact from "../../Common/SocialContact/SocialContact";
+import imageCode from "../../Utils/Img/Code.png";
 
 const useStyles = makeStyles((theme) => ({
   about: {
@@ -51,11 +52,7 @@ const About = () => {
           </p>
         </Box>
         <Box>
-          <img
-            src={require("../../Utils/Img/Code.png").default}
-            alt="foto-codigo"
-            className={classes.picture}
-          />
+          <img src={imageCode} alt="foto-codigo" className={classes.picture} />
         </Box>
       </Box>
       <Box className="about-contact">

@@ -12,24 +12,30 @@ const useStyles = makeStyles(() => ({
     backgroundColor: "white",
     border: "2px solid aquamarine",
     boxShadow: 24,
-    padding: 2,
+    padding: 8,
   },
   buttonDesc: {
-    padding: 1,
+    padding: 4,
     color: "black",
     backgroundColor: "aquamarine",
+    border: "none",
+    width: "200px",
+    height: "40px",
+    borderRadius: "8px",
+    fontSize: "16px",
+    cursor: "pointer",
+    transition: "0.2s ease-in-out",
     "&:hover": {
-      color: "black",
-      backgroundColor: "aquamarine",
+      transform: "scale(1.1)",
     },
   },
   company: {
-    fontWeight: 600,
-    margin: 1.5,
+    fontWeight: "600 !important",
+    margin: 4.5,
     textDecoration: "underline",
   },
   resposabilities: {
-    margin: 1.5,
+    margin: 4.5,
   },
 }));
 
@@ -41,9 +47,9 @@ const BasicModal = ({ data }) => {
 
   return (
     <div>
-      <Button className={classes.buttonDesc} onClick={handleOpen}>
+      <button className={classes.buttonDesc} onClick={handleOpen}>
         Ver descipcion completa
-      </Button>
+      </button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -64,7 +70,7 @@ const BasicModal = ({ data }) => {
               id="modal-modal-description"
               className={classes.resposabilities}
             >
-              {item.Resposabilities}
+              - {item.Resposabilities}
             </Typography>
           ))}
         </Box>

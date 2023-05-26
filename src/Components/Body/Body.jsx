@@ -1,5 +1,4 @@
 import About from "./About/About";
-import Projects from "./ProjectsPersonal/Projects";
 import Skills from "./Skills/Skills";
 import Experience from "./Experience/Experience";
 import Contact from "./Contact/Contact";
@@ -23,9 +22,6 @@ const Body = () => {
       </section>
       <section id="projects">
         <ProjectsWorks />
-      </section>
-      <section id="projectsPersonal">
-        <Projects />
       </section>
       <section id="tecnologies">
         <Skills />

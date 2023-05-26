@@ -16,16 +16,12 @@ export const SkillsData = [
             icon: <i class="devicon-materialui-plain colored"></i>
         },
         {
-            name:'Redux',
-            icon: <i class="devicon-redux-original colored"></i>
+            name:'TailwindCss',
+            icon: <i class="devicon-tailwindcss-original-wordmark colored"></i>
         },
         {
             name:'Javascript',
             icon: <i class="devicon-javascript-plain colored"></i>
-        },
-        {
-            name: 'Bootstrap',
-            icon: <i class="devicon-bootstrap-plain-wordmark colored"></i>
         },
         {
             name: "NextJs",
@@ -47,10 +43,6 @@ export const SkillsData = [
     {
         name: 'Typescript',
         icon: <i class="devicon-typescript-plain colored"></i>
-    },
-    {
-        name: 'Python',
-        icon: <i class="devicon-python-plain-wordmark colored"></i>
     },
     {
         name: 'PostgreSql',

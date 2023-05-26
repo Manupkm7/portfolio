@@ -13,7 +13,7 @@ const styles = makeStyles(() => ({
   skillsSection: {
     display: "flex",
     justifyContent: "space-between",
-    margin: 2,
+    margin: 8,
     // [theme.breakpoints.down("xs")]: {
     //   flexDirection: "column",
     //   alignItems: "center",
@@ -34,7 +34,7 @@ const styles = makeStyles(() => ({
     // },
   },
   title: {
-    fontWeight: 600,
+    fontWeight: "700 !important",
   },
 }));
 

@@ -15,10 +15,10 @@ const useStyles = makeStyles(() => ({
     flexWrap: "wrap",
     justifyContent: "space-between",
     alignItems: "center",
-    margin: 3,
+    margin: 4,
   },
   title: {
-    fontWeight: 600,
+    fontWeight: "700 !important"
   },
 }));
 

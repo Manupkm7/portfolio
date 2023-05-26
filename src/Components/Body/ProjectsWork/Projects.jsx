@@ -11,7 +11,7 @@ const useStyles = makeStyles(() => ({
     flex: 1,
   },
   title: {
-    fontWeight: 600,
+    fontWeight: "700 !important"
   },
 }));
 

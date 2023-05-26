@@ -22,8 +22,7 @@ const useStyles = makeStyles(() => ({
     flexWrap: "nowrap",
     alignContent: "flex-start",
     alignItems: "flex-start",
-    padding: 1,
-    margin: 1,
+    padding: 4,
     // [theme.breakpoints.down("xs")]: {
     //   justifyContent: "center",
     // },
@@ -32,15 +31,21 @@ const useStyles = makeStyles(() => ({
     textDecoration: "none",
     fontSize: 19,
     color: "black",
+    padding: 4,
+    transition: "0.2s ease-in-out",
+    "&:hover": {
+      transform: "scale(1.1)",
+      transition: "0.2s ease-in-out",
+    },
   },
   linkButton: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "aquamarine",
-    padding: 1,
-    marginTop: 1,
-    borderRadius: 1,
+    padding: 4,
+    marginTop: 4,
+    borderRadius: 4,
     fontSize: 16,
     width: "max-content",
     marginRight: "5px",
@@ -49,21 +54,21 @@ const useStyles = makeStyles(() => ({
     display: "flex",
     maxWidth: "60%",
     flexWrap: "wrap",
-    margin: 1,
+    margin: 4,
     // [theme.breakpoints.down("xs")]: {
     //   maxWidth: "100%",
     //   justifyContent: "center",
     // },
   },
   projectPhoto: {
-    width: "100%",
-    borderRadius: 1 * 3,
+    width: "300px",
+    borderRadius: 4 * 3,
   },
   tag: {
-    padding: 1,
+    padding: 6,
     backgroundColor: "aquamarine",
-    borderRadius: 1,
-    margin: 1,
+    borderRadius: 4,
+    margin: 4,
   },
   projectInfo: {
     // [theme.breakpoints.down("xs")]: {
@@ -81,8 +86,8 @@ const useStyles = makeStyles(() => ({
     // },
   },
   titles: {
-    margin: 1,
-    padding: 1,
+    margin: 4,
+    padding: 4,
     display: "flex",
     // [theme.breakpoints.down("xs")]: {
     //   justifyContent: "center",
@@ -92,9 +97,9 @@ const useStyles = makeStyles(() => ({
     fontSize: 32,
   },
   aboutText: {
-    padding: 8,
-    margin: 8,
     fontSize: 20,
+    padding: 4,
+    margin: 4,
     // [theme.breakpoints.down("xs")]: {
     //   padding: 0,
     //   margin: 0,

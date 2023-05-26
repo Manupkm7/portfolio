@@ -12,7 +12,7 @@ const useStyles = makeStyles(() => ({
     flex: 1,
   },
   sectionTitle: {
-    fontWeight: 700,
+    fontWeight: "700 !important"
   },
   contactContainer: {
     display: "flex",
@@ -33,11 +33,21 @@ const useStyles = makeStyles(() => ({
   },
   download: {
     backgroundColor: "aquamarine",
-    padding: 2,
-    borderRadius: "4px",
+    padding: 8,
+    borderRadius: "8px",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    color: "black",
+    border: "none",
+    width: "200px",
+    height: "40px",
+    fontSize: "16px",
+    cursor: "pointer",
+    transition: "0.2s ease-in-out",
+    "&:hover": {
+      transform: "scale(1.1)",
+    },
   },
   downloadLink: {
     textDecoration: "none",
@@ -70,7 +80,7 @@ const Contact = () => {
           <a
             className={classes.downloadLink}
             download
-            href={require("../../Utils/VictorManuelEspinozaCV.pdf").default}
+            href="Victor_Manuel Espinoza_Resume.pdf"
           >
             <Icon
               className={classes.iconDownload}
