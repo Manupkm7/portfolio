@@ -1,24 +1,37 @@
-import React from 'react'
-import Header from '../Header/Header'
-import Footer from '../Footer/Footer'
-import './Home.css'
-import Body from '../Body/Body'
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+import Body from "../Body/Body";
+import { makeStyles } from "@mui/styles";
 
+const useStyles = makeStyles((theme) => ({
+  home: {
+    display: "flex",
+    flexDirection: "column",
+    margin: 0,
+    alignItems: "center",
+    width: "100%",
+    [theme.breakpoints.only("md")]: {
+      width: "90%",
+    },
+  },
+}));
 
 const Home = () => {
-    return (
-        <div className='home'>
-        <div className='home'>
-            <Header />
-        </div>
-        <div className='home'>
-            <Body />
-        </div>
-        <div className='home'>
-            <Footer />
-        </div>
-        </div>
-    )
-}
+  const classes = useStyles();
 
-export default Home
+  return (
+    <div className={classes.home}>
+      <div className={classes.home}>
+        <Header />
+      </div>
+      <div className={classes.home}>
+        <Body />
+      </div>
+      <div className={classes.home}>
+        <Footer />
+      </div>
+    </div>
+  );
+};
+
+export default Home;

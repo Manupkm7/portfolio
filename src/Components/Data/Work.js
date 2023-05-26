@@ -1,11 +1,37 @@
 export const WorkData = [
     {
+        company: 'Flame Factory',
+        designation: 'Fullstack Developer',
+        dateJoining: '2022',
+        dateEnd: 'Present',
+        url: "https://www.linkedin.com/company/flamefactory?originalSubdomain=ar",
+        logo: 'https://flamefactory.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fflamefactory-512.99aa3db6.png&w=640&q=75',
+        work: 'Participación y liderazgo de un equipo de desarrollo ágil con sprints de una semana presentando a los clientes avances sobre el desarrollo de los distintos proyectos',
+        data: [
+        {
+            Resposabilities: "Gestion de complejidad de proyectos",    
+        },
+        {
+            Resposabilities: "Diseñar interfaces de usuario.",    
+        },
+        {
+            Resposabilities: "Creacion de Servidor basado en Node Js.",
+        },
+        {
+            Resposabilities: "Creacion de modelos para bases de datos relacionales.",
+        },
+        {
+            Resposabilities: "Creacion de animaciones con Tailwindcss.",
+        },
+    ]
+    },
+    {
         company: 'Rather Labs',
         designation: 'Front End Developer',
         dateJoining: '28/09/2021',
         dateEnd: '2/09/2022',
         url: "https://ratherlabs.com/",
-        logo: 'https://cdm-backend-assets.s3.amazonaws.com/users/usr_bCMiZnNEmc0zS/avatars/ast_tFiClNODbQCpM.png',
+        logo: 'https://uploads-ssl.webflow.com/629ffbf53482a7f051677d6b/62b501e5b25b1b9585a28074_webclip.png',
         work: 'Participación y liderazgo de un equipo de desarrollo ágil con sprints de una semana presentando a los clientes avances sobre el desarrollo de los distintos proyectos',
         data: [
         {
