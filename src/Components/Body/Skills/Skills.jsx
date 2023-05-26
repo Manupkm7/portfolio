@@ -4,7 +4,7 @@ import SkillCard from "./SkillCard";
 import { Box, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-const styles = makeStyles(() => ({
+const styles = makeStyles((theme) => ({
   skill: {
     display: "flex",
     flexDirection: "column",
@@ -14,10 +14,10 @@ const styles = makeStyles(() => ({
     display: "flex",
     justifyContent: "space-between",
     margin: 8,
-    // [theme.breakpoints.down("xs")]: {
-    //   flexDirection: "column",
-    //   alignItems: "center",
-    // },
+    [theme.breakpoints.only("xs")]: {
+      flexDirection: "column",
+      alignItems: "center",
+    },
   },
   skillTitle: {
     fontSize: 25,
@@ -28,10 +28,10 @@ const styles = makeStyles(() => ({
     flexWrap: "wrap",
     maxWidth: "70%",
     justifyContent: "flex-end",
-    // [theme.breakpoints.down("xs")]: {
-    //   maxWidth: "100",
-    //   justifyContent: "center",
-    // },
+    [theme.breakpoints.only("xs")]: {
+      maxWidth: "100",
+      justifyContent: "center",
+    },
   },
   title: {
     fontWeight: "700 !important",

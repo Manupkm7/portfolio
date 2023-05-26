@@ -8,8 +8,8 @@ import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles(() => ({
   about: {
-    padding: 2,
-    paddingBottom: 4,
+    padding: 8,
+    paddingBottom: 8,
   },
 }));
 

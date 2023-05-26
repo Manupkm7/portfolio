@@ -1,5 +1,6 @@
 import { Container } from "@mui/material";
 import React from "react";
+import { withTheme } from "./theme";
 import Home from "./Components/Home/Home";
 
 const App = () => {
@@ -10,4 +11,8 @@ const App = () => {
   );
 };
 
-export default App;
+const hocs = [withTheme];
+
+const wrappedApp = hocs.reduce((app, wrapper) => wrapper(app), App);
+
+export default wrappedApp;

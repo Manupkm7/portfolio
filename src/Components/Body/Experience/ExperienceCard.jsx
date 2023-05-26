@@ -2,7 +2,7 @@ import ModalWindow from "./ModalWindow";
 import { Box, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   workCard: {
     padding: 4,
     marginTop: 4.2,
@@ -10,34 +10,35 @@ const useStyles = makeStyles(() => ({
     justifyContent: "space-between",
     alignItems: "center",
     flexDirection: "row-reverse",
-    // [theme.breakpoints.down("xs")]: {
-    //   justifyContent: "space-evenly",
-    //   flexDirection: "column-reverse",
-    // },
+    [theme.breakpoints.only("xs")]: {
+      justifyContent: "space-evenly",
+      flexDirection: "column",
+      margin: 8,
+    },
   },
   workLogo: {
     width: "80px",
-    // [theme.breakpoints.down("xs")]: {
-    //   width: "30%",
-    // },
+    [theme.breakpoints.only("xs")]: {
+      width: "30%",
+    },
   },
   workDesc: {
     width: "80%",
     textAlign: "left",
-    // [theme.breakpoints.down("xs")]: {
-    //   width: "100%",
-    //   textAlign: "center",
-    // },
+    [theme.breakpoints.only("xs")]: {
+      width: "100%",
+      textAlign: "center",
+    },
   },
   workInfo: {
     display: "flex",
     alignItems: "flex-start",
     flexDirection: "column",
     width: "40%",
-    // [theme.breakpoints.down("xs")]: {
-    //   width: "100%",
-    //   alignItems: "center",
-    // },
+    [theme.breakpoints.only("xs")]: {
+      width: "100%",
+      alignItems: "center",
+    },
   },
   workComp: {
     fontWeight: "600 !important",
@@ -53,11 +54,11 @@ const useStyles = makeStyles(() => ({
     },
   },
   linkImage: {
-    // [theme.breakpoints.down("xs")]: {
-    //   display: "flex",
-    //   justifyContent: "center",
-    //   padding: theme.spacing(1),
-    // },
+    [theme.breakpoints.only("xs")]: {
+      display: "flex",
+      justifyContent: "center",
+      padding: 4,
+    },
   },
 }));
 

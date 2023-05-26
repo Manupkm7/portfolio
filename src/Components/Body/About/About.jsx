@@ -11,30 +11,30 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    // [theme.breakpoints.only("xs")]: {
-    //   flexDirection: "column",
-    //   justifyContent: "center",
-    //   alignItems: "center",
-    // },
+    [theme.breakpoints.only("xs")]: {
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+    },
   },
   aboutInfo: {
     fontSize: "2rem",
-    // [theme.breakpoints.only("xs")]: {
-    //   fontSize: "1.5rem",
-    // },
+    [theme.breakpoints.only("xs")]: {
+      fontSize: "1.5rem",
+    },
   },
   infoName: {
     color: "blueviolet",
     fontSize: "2.5rem",
-    // [theme.breakpoints.only("xs")]: {
-    //   fontSize: "2rem",
-    // },
+    [theme.breakpoints.only("xs")]: {
+      fontSize: "2rem",
+    },
   },
   picture: {
     height: 415,
-    // [theme.breakpoints.only("xs")]: {
-    //   height: 280,
-    // },
+    [theme.breakpoints.only("xs")]: {
+      height: 280,
+    },
   },
 }));
 

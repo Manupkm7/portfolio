@@ -5,7 +5,7 @@ import { mdiCloudDownload } from "@mdi/js";
 import { Box, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   contact: {
     display: "flex",
     flexDirection: "column",
@@ -20,11 +20,11 @@ const useStyles = makeStyles(() => ({
     justifyContent: "space-between",
     alignItems: "center",
     margin: 2,
-    // [theme.breakpoints.down("xs")]: {
-    //   flexDirection: "column",
-    //   justifyContent: "center",
-    //   alignItems: "center",
-    // },
+    [theme.breakpoints.only("xs")]: {
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+    },
   },
   contactLeft: {
     maxWidth: "60%",
@@ -40,7 +40,7 @@ const useStyles = makeStyles(() => ({
     alignItems: "center",
     color: "black",
     border: "none",
-    width: "200px",
+    width: "250px",
     height: "40px",
     fontSize: "16px",
     cursor: "pointer",
@@ -54,6 +54,7 @@ const useStyles = makeStyles(() => ({
     color: "black",
     display: "flex",
     textAlign: "center",
+    alignItems: "center",
   },
   iconDownload: {
     marginRight: "5px",

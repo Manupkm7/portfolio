@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   skillCards: {
     width: "max-content",
     padding: 4,
@@ -13,16 +13,16 @@ const useStyles = makeStyles(() => ({
     margin: 4,
     borderRadius: 4,
     marginTop: 8,
-    // [theme.breakpoints.down("xs")]: {
-    //   fontSize: 60,
-    // },
+    [theme.breakpoints.only("xs")]: {
+      fontSize: 60,
+    },
   },
   skillIcon: {
     fontSize: 80,
-    // [theme.breakpoints.down("xs")]: {
-    //   width: "max-content",
-    //   height: 100,
-    // },
+    [theme.breakpoints.only("xs")]: {
+      width: "max-content",
+      height: 100,
+    },
   },
   skillName: {
     fontSize: "1.5rem",

@@ -3,7 +3,7 @@ import { mdiWebCheck } from "@mdi/js";
 import { Box } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   projectCard: {
     display: "flex",
     flex: 1,
@@ -11,9 +11,9 @@ const useStyles = makeStyles(() => ({
     alignItems: "center",
     margin: 2,
     padding: 1,
-    // [theme.breakpoints.down("xs")]: {
-    //   flexDirection: "column-reverse",
-    // },
+    [theme.breakpoints.only("xs")]: {
+      flexDirection: "column-reverse",
+    },
   },
   boxLinks: {
     display: "flex",
@@ -23,9 +23,9 @@ const useStyles = makeStyles(() => ({
     alignContent: "flex-start",
     alignItems: "flex-start",
     padding: 4,
-    // [theme.breakpoints.down("xs")]: {
-    //   justifyContent: "center",
-    // },
+    [theme.breakpoints.only("xs")]: {
+      justifyContent: "center",
+    },
   },
   links: {
     textDecoration: "none",
@@ -55,10 +55,10 @@ const useStyles = makeStyles(() => ({
     maxWidth: "60%",
     flexWrap: "wrap",
     margin: 4,
-    // [theme.breakpoints.down("xs")]: {
-    //   maxWidth: "100%",
-    //   justifyContent: "center",
-    // },
+    [theme.breakpoints.only("xs")]: {
+      maxWidth: "100%",
+      justifyContent: "center",
+    },
   },
   projectPhoto: {
     width: "300px",
@@ -71,39 +71,39 @@ const useStyles = makeStyles(() => ({
     margin: 4,
   },
   projectInfo: {
-    // [theme.breakpoints.down("xs")]: {
-    //   marginLeft: 0,
-    //   marginTop: theme.spacing(2),
-    // },
+    [theme.breakpoints.only("xs")]: {
+      marginLeft: 0,
+      marginTop: 8,
+    },
   },
   aLinks: {
     display: "flex",
     justifyContent: "flex-end",
     width: "40%",
-    // [theme.breakpoints.down("xs")]: {
-    //   justifyContent: "center",
-    //   width: "70%",
-    // },
+    [theme.breakpoints.only("xs")]: {
+      justifyContent: "center",
+      width: "70%",
+    },
   },
   titles: {
     margin: 4,
     padding: 4,
     display: "flex",
-    // [theme.breakpoints.down("xs")]: {
-    //   justifyContent: "center",
-    //   margin: 0,
-    //   marginTop: theme.spacing(4),
-    // },
+    [theme.breakpoints.only("xs")]: {
+      justifyContent: "center",
+      margin: 0,
+      marginTop: theme.spacing(4),
+    },
     fontSize: 32,
   },
   aboutText: {
     fontSize: 20,
     padding: 4,
     margin: 4,
-    // [theme.breakpoints.down("xs")]: {
-    //   padding: 0,
-    //   margin: 0,
-    // },
+    [theme.breakpoints.only("xs")]: {
+      padding: 0,
+      margin: 0,
+    },
   },
 }));
 
