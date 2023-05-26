@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Typography, Button, Modal } from "@mui/material";
+import { Box, Typography, Modal } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles(() => ({
