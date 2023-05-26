@@ -1,12 +1,22 @@
-import React from 'react'
-import './Footer.css'
+import { makeStyles } from "@mui/styles";
+
+const useStyles = makeStyles((theme) => ({
+  footer: {
+    padding: "12px",
+    marginTop: "24px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+}));
 
 const Footer = () => {
-    return (
-        <div className='footer'>
-            <p>Todos los derechos reservados 2021 © Manuel Espinoza 🤠🔥</p>
-        </div>
-    )
-}
+  const classes = useStyles();
+  return (
+    <div className={classes.footer}>
+      <p>Todos los derechos reservados 2021 © Manuel Espinoza 🤠🔥</p>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;

@@ -70,19 +70,22 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 4,
     margin: 4,
   },
-  projectInfo: {
-    [theme.breakpoints.only("xs")]: {
-      marginLeft: 0,
-      marginTop: 8,
-    },
-  },
   aLinks: {
     display: "flex",
     justifyContent: "flex-end",
     width: "40%",
+    padding: 4,
     [theme.breakpoints.only("xs")]: {
       justifyContent: "center",
       width: "70%",
+    },
+    [theme.breakpoints.only("sm")]: {
+      width: "60%",
+      padding: 8,
+    },
+    [theme.breakpoints.only("md")]: {
+      width: "60%",
+      padding: 8,
     },
   },
   titles: {
@@ -92,7 +95,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.only("xs")]: {
       justifyContent: "center",
       margin: 0,
-      marginTop: theme.spacing(4),
+      marginTop: 4,
     },
     fontSize: 32,
   },
@@ -111,7 +114,7 @@ const ProjectCard = ({ project }) => {
   const classes = useStyles();
   return (
     <Box className={classes.projectCard}>
-      <Box className={classes.projectInfo}>
+      <Box>
         <label className={classes.titles} variant="h5">
           {project.title}
         </label>

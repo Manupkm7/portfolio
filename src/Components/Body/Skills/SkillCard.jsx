@@ -22,6 +22,17 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.only("xs")]: {
       width: "max-content",
       height: 100,
+      padding: 4,
+    },
+    [theme.breakpoints.only("sm")]: {
+      width: "max-content",
+      height: 100,
+      padding: 4,
+    },
+    [theme.breakpoints.only("md")]: {
+      width: "max-content",
+      height: 100,
+      padding: 4,
     },
   },
   skillName: {

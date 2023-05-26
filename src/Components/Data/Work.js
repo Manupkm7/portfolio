@@ -9,25 +9,19 @@ export const WorkData = [
         work: 'Participación y liderazgo de un equipo de desarrollo ágil con sprints de una semana presentando a los clientes avances sobre el desarrollo de los distintos proyectos',
         data: [
         {
-            Resposabilities: "Optimizacion de codigo",    
+            Resposabilities: "Gestion de complejidad de proyectos",    
         },
         {
-            Resposabilities: "Creacion de componentes con conexion a Metamask",    
+            Resposabilities: "Diseñar interfaces de usuario.",    
         },
         {
-            Resposabilities: "Diseño de pantallas basadas en prototipos",
+            Resposabilities: "Creacion de Servidor basado en Node Js.",
         },
         {
-            Resposabilities: "Conexion con Backend y Blockchain",
+            Resposabilities: "Creacion de modelos para bases de datos relacionales.",
         },
         {
-            Resposabilities: "Implementacion de SEO en los distintos proyectos",
-        },
-        {
-            Resposabilities: "Mejorar la experiencia UI & UX",
-        },
-        {
-            Resposabilities: "Creación de Smart Contracts en Solidity",
+            Resposabilities: "Creacion de animaciones con Tailwindcss.",
         },
     ]
     },

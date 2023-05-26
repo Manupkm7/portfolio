@@ -13,7 +13,7 @@ const styles = makeStyles((theme) => ({
   skillsSection: {
     display: "flex",
     justifyContent: "space-between",
-    margin: 8,
+    margin: 16,
     [theme.breakpoints.only("xs")]: {
       flexDirection: "column",
       alignItems: "center",
@@ -28,6 +28,8 @@ const styles = makeStyles((theme) => ({
     flexWrap: "wrap",
     maxWidth: "70%",
     justifyContent: "flex-end",
+    marginTop: 16,
+    marginBottom: 16,
     [theme.breakpoints.only("xs")]: {
       maxWidth: "100",
       justifyContent: "center",
