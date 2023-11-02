@@ -24,7 +24,7 @@ const SocialContact = () => {
     <div className={classes.socialContact}>
       {data.map((item) => {
         return (
-          <a href={item.link}>
+          <a key={item} href={item.link}>
             <div className={classes.socialIconDiv}>
               <img
                 src={item.icon}

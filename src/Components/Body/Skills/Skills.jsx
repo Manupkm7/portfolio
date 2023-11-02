@@ -53,7 +53,7 @@ const Skills = () => {
       <Box>
         {data.map((item) => {
           return (
-            <Box className={classes.skillsSection}>
+            <Box key={item} className={classes.skillsSection}>
               <label className={classes.skillTitle}>{item.type}</label>
               <Box className={classes.skillList}>
                 {item.list.map((skill) => {

@@ -14,7 +14,7 @@ const Footer = () => {
   const classes = useStyles();
   return (
     <div className={classes.footer}>
-      <p>Todos los derechos reservados 2021 © Manuel Espinoza 🤠🔥</p>
+      <p>Todos los derechos reservados 2023 © Manuel Espinoza🔥</p>
     </div>
   );
 };

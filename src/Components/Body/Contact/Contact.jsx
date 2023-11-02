@@ -81,7 +81,7 @@ const Contact = () => {
           <a
             className={classes.downloadLink}
             download
-            href="Victor_Manuel Espinoza_Resume.pdf"
+            href="Victor_Manuel Espinoza_Resume-20232.pdf"
           >
             <Icon
               className={classes.iconDownload}

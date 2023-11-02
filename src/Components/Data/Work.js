@@ -6,22 +6,19 @@ export const WorkData = [
         dateEnd: 'Present',
         url: "https://www.linkedin.com/company/flamefactory?originalSubdomain=ar",
         logo: 'https://flamefactory.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fflamefactory-512.99aa3db6.png&w=640&q=75',
-        work: 'Participación y liderazgo de un equipo de desarrollo ágil con sprints de una semana presentando a los clientes avances sobre el desarrollo de los distintos proyectos',
+        work: 'Participation and training of an agile development team and making presentations to clients on the progress of the project.',
         data: [
         {
-            Resposabilities: "Gestion de complejidad de proyectos",    
+            Resposabilities: "Creation of animations with Tailwindcss.",    
         },
         {
-            Resposabilities: "Diseñar interfaces de usuario.",    
+            Resposabilities: "Assisted in requirements analysis, High Level Design, Low Level Design, and complex code development for 2 applications",
         },
         {
-            Resposabilities: "Creacion de Servidor basado en Node Js.",
+            Resposabilities: "Analyzed and optimized performance bott lenecks in existing backend systems, such as database queries and storage solutions to increase responsiveness.",
         },
         {
-            Resposabilities: "Creacion de modelos para bases de datos relacionales.",
-        },
-        {
-            Resposabilities: "Creacion de animaciones con Tailwindcss.",
+            Resposabilities: "Supported implementations for UI/UX styling frameworks including TailwindCss and Material Ui",
         },
     ]
     },
@@ -35,59 +32,15 @@ export const WorkData = [
         work: 'Participación y liderazgo de un equipo de desarrollo ágil con sprints de una semana presentando a los clientes avances sobre el desarrollo de los distintos proyectos',
         data: [
         {
-            Resposabilities: "Optimizacion de codigo",    
+            Resposabilities: "Collaborated with 5 other team members to develop 16 new userfacing features",    
         },
         {
-            Resposabilities: "Creacion de componentes con conexion a Metamask",    
+            Resposabilities: "Wrote automated test for every new feature to identify and cretify bugs",    
         },
         {
-            Resposabilities: "Diseño de pantallas basadas en prototipos",
-        },
-        {
-            Resposabilities: "Conexion con Backend y Blockchain",
-        },
-        {
-            Resposabilities: "Implementacion de SEO en los distintos proyectos",
-        },
-        {
-            Resposabilities: "Mejorar la experiencia UI & UX",
-        },
-        {
-            Resposabilities: "Creación de Smart Contracts en Solidity",
+            Resposabilities: "Evaluated end-to-end designs to performance complexity, scalability, quality and security",
         },
     ]
-    },
-    {
-        company: 'Techo | Teto',
-        designation: 'FullStack Developer',
-        dateJoining: '29/08/2021',
-        dateEnd: '24/09/2021 - Pasantia Estudiantil',
-        url: "https://techo.org/",
-        logo: 'https://namati.org/wp-content/uploads/2019/09/Logo_TECHO-768x768.png',
-        work: 'Participación de un equipo de desarrollo ágil con sprints de una semana presentando a un Product Owner avances sobre el desarrollo de los componentes',
-        data: [
-            {
-                Resposabilities: "Optimización de código.",    
-            },
-            {
-                Resposabilities: "Implementación de nuevas funcionalidades como por ejemplo.",
-            },
-            {
-                Resposabilities: "Rechazar/Aceptar candidatos mediante un botón que actualice su estado en una Base de datos.",
-            },
-            {
-                Resposabilities: "Agilizar la selección y comunicación con candidatos para el voluntariado.",
-            },
-            {
-                Resposabilities: "Envío de Mails automáticos y personalizados con una plantilla especifica.",
-            },
-            {
-                Resposabilities: "Capacidad de entrevistar a candidatos para una posición.",
-            },
-            {
-                Resposabilities: "Creación de nuevos trabajos.",
-            }
-        ]
     },
 
 ]
