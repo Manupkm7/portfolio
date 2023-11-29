@@ -64,9 +64,9 @@ const BasicModal = ({ data }) => {
           >
             {data.company}
           </Typography>
-          {data.data.map((item) => (
+          {data.data.map((item, index) => (
             <Typography
-              key={item}
+              key={index}
               id="modal-modal-description"
               className={classes.resposabilities}
             >

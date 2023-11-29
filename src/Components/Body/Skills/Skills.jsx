@@ -26,7 +26,6 @@ const styles = makeStyles((theme) => ({
   skillList: {
     display: "flex",
     flexWrap: "wrap",
-    maxWidth: "70%",
     justifyContent: "flex-end",
     marginTop: 16,
     marginBottom: 16,
@@ -53,11 +52,11 @@ const Skills = () => {
       <Box>
         {data.map((item) => {
           return (
-            <Box key={item} className={classes.skillsSection}>
+            <Box key={item.type} className={classes.skillsSection}>
               <label className={classes.skillTitle}>{item.type}</label>
               <Box className={classes.skillList}>
                 {item.list.map((skill) => {
-                  return <SkillCard skill={skill} />;
+                  return <SkillCard skill={skill} key={skill.name} />;
                 })}
               </Box>
             </Box>

@@ -33,7 +33,7 @@ const Experience = () => {
       </Typography>
       <Box className={classes.experience}>
         {data.map((data) => {
-          return <ExperienceCard data={data} />;
+          return <ExperienceCard data={data} key={data.company} />;
         })}
       </Box>
     </Box>

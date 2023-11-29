@@ -26,7 +26,7 @@ const ProjectsWorks = () => {
       </Typography>
       <Box>
         {(ProjectsDataWork || []).map((project) => {
-          return <ProjectCard key={project} project={project} />;
+          return <ProjectCard key={project.id} project={project} />;
         })}
       </Box>
     </Box>

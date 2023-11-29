@@ -12,11 +12,11 @@ const useStyles = makeStyles(() => ({
   web: {
     display: "flex",
     flex: 1,
-    alignItems: "center"
+    alignItems: "center",
+    gap: "10px",
   },
   webOption: {
-    fontSize: "17px",
-    marginRight: "15px",
+    fontSize: "14px",
     fontWeight: 700,
     "& a": {
       textDecoration: "none",

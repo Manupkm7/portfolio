@@ -7,6 +7,8 @@ const useStyles = makeStyles((theme) => ({
   projectCard: {
     display: "flex",
     flex: 1,
+    marginTop: 14,
+    marginBottom: 14,
     justifyContent: "space-between",
     alignItems: "center",
     margin: 2,
@@ -52,29 +54,30 @@ const useStyles = makeStyles((theme) => ({
   },
   projectTags: {
     display: "flex",
-    maxWidth: "60%",
     flexWrap: "wrap",
-    margin: 4,
+    marginTop: 4,
+    gap: 4,
     [theme.breakpoints.only("xs")]: {
-      maxWidth: "100%",
       justifyContent: "center",
     },
   },
   projectPhoto: {
     width: "300px",
     borderRadius: 4 * 3,
+    "&:hover": {
+      transform: "scale(1.1)",
+      transition: "0.3s ease-in-out",
+    },
   },
   tag: {
     padding: 6,
     backgroundColor: "aquamarine",
     borderRadius: 4,
-    margin: 4,
   },
   aLinks: {
     display: "flex",
     justifyContent: "flex-end",
     width: "40%",
-    padding: 4,
     [theme.breakpoints.only("xs")]: {
       justifyContent: "center",
       width: "70%",
@@ -89,8 +92,6 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   titles: {
-    margin: 4,
-    padding: 4,
     display: "flex",
     [theme.breakpoints.only("xs")]: {
       justifyContent: "center",
@@ -100,9 +101,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 32,
   },
   aboutText: {
-    fontSize: 20,
-    padding: 4,
-    margin: 4,
+    fontSize: 14,
     [theme.breakpoints.only("xs")]: {
       padding: 0,
       margin: 0,
@@ -117,39 +116,28 @@ const ProjectCard = ({ project }) => {
       <Box>
         <label className={classes.titles} variant="h5">
           {project.title}
+          <Box className={classes.boxLinks}>
+            {project.demo && (
+              <a
+                className={classes.links}
+                target="_blank"
+                rel="noreferrer"
+                href={project.demo}
+              >
+                <Box className={classes.linkButton}>
+                  <Icon path={mdiWebCheck} size={0.8} color="black" /> Link
+                </Box>
+              </a>
+            )}
+          </Box>
         </label>
-        <Box className={classes.boxLinks}>
-          {project.demo && (
-            <a
-              className={classes.links}
-              target="_blank"
-              rel="noreferrer"
-              href={project.demo}
-            >
-              <Box className={classes.linkButton}>
-                <Icon path={mdiWebCheck} size={0.8} color="black" /> Link
-              </Box>
-            </a>
-          )}
-          {project.github && (
-            <a
-              className={classes.links}
-              target="_blank"
-              rel="noreferrer"
-              href={project.github}
-            >
-              <Box className={classes.linkButton}>
-                <i class="devicon-github-original-wordmark colored"></i> Github
-              </Box>
-            </a>
-          )}
-        </Box>
+
         <label className={classes.aboutText} variant="body1">
           {project.about}
         </label>
         <Box className={classes.projectTags}>
           {project.tags.map((tag) => {
-            return <label className={classes.tag}>{tag}</label>;
+            return <label key={tag} className={classes.tag}>{tag}</label>
           })}
         </Box>
       </Box>
@@ -157,7 +145,7 @@ const ProjectCard = ({ project }) => {
         target="_blank"
         rel="noreferrer"
         className={classes.aLinks}
-        href={project.github}
+        href={project.demo}
       >
         <img
           src={project.image}

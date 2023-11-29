@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     margin: 4,
+    cursor: "pointer",
     borderRadius: 4,
     marginTop: 8,
     [theme.breakpoints.only("xs")]: {
@@ -37,16 +38,28 @@ const useStyles = makeStyles((theme) => ({
   },
   skillName: {
     fontSize: "1.5rem",
+    cursor: "pointer",
   },
+  skillTarget: {
+    textDecoration: "none",
+    color: "black",
+    "&:hover": {
+      transform: "scale(1.1)",
+      transition: "0.3s ease-in-out",
+    },
+    cursor: "pointer",
+  }
 }));
 
 const SkillCard = ({ skill }) => {
   const classes = useStyles();
   return (
-    <Box className={classes.skillCards}>
-      <Box className={classes.skillIcon}>{skill.icon}</Box>
-      <label className={classes.skillName}>{skill.name}</label>
-    </Box>
+    <a href={skill.link} className={classes.skillTarget} target="_blank" rel="noreferrer">
+      <Box className={classes.skillCards}>
+        <img className={classes.skillIcon} alt={skill.name} src={skill.icon} />
+        <label className={classes.skillName}>{skill.name}</label>
+      </Box>
+    </a>
   );
 };
 
