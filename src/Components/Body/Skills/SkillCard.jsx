@@ -20,21 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
   skillIcon: {
     fontSize: 80,
-    [theme.breakpoints.only("xs")]: {
-      width: "max-content",
-      height: 100,
-      padding: 4,
-    },
-    [theme.breakpoints.only("sm")]: {
-      width: "max-content",
-      height: 100,
-      padding: 4,
-    },
-    [theme.breakpoints.only("md")]: {
-      width: "max-content",
-      height: 100,
-      padding: 4,
-    },
+    height: "75px",
   },
   skillName: {
     fontSize: "1.5rem",
